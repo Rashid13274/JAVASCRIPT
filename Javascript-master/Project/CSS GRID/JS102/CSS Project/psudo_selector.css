@@ -1,0 +1,38 @@
+/* 
+there is two before and after;
+psudo selector can't be override;
+to apply psudo selector it must contain content;
+single closing tag like input br etc does'nt apply psudo selector
+ */
+ .required::before{
+     content: "";
+     display: block;
+     width: 10px;
+     height: 10px;
+     background-color: red;
+ }
+ .required::after{
+    content: "*";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+[data-tooltip]{
+    position: relative;
+}
+[data-tooltip]:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: lightgray;
+
+}
+label::after{
+    content: "something";
+    /* it is not gonna run since it overriding the .required class of label */
+}

@@ -1,0 +1,21 @@
+[{
+    "id":1,
+    "name":"md rashid",
+    "age":23,
+    "village":"deodha",
+    "phone no":"213-321-333"
+},
+{
+    "id":2,
+    "name":"md rahman",
+    "age":43,
+    "village":"deodha",
+    "phone no":"213-321-333"
+},
+{
+    "id":1,
+    "name":"md muwaz",
+    "age":23,
+    "village":"deodha",
+    "phone no":"213-321-333"
+}]

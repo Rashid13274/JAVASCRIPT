@@ -1,0 +1,117 @@
+body,ul,li ,h1 h2{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* if there is default browser margin and padding are present so to overcome it*/ 
+}
+.banner img{
+    position: relative;
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute; /* to absolute position parent must have position*/
+    left: 1%;
+    top: 20%;
+   background-color: #FEB614;
+   color:white;
+   padding: 7%;
+}
+.banner h2{
+    font-size: 30px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+header{
+    background-color: #F63232;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;/* initially it's zero  giving +ve it forward and with -ve it backwards*/
+    top: 0;
+    left: 0;/* to fill space of left*/
+}
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 8px 12px;
+    display: inline-block; /* since h1 is block level element so display proberly we use inline block*/
+    border-radius: 50%;
+}
+nav{
+    background-color: gray;
+    padding: 5%;
+    position: sticky;
+    top: 120px;/* if top value goes to 100px-120px nav block must be stuck*/
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto; /* margin 0 left and right and auto top and down*/
+    
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color:crimson;
+}
+nav li a .join{
+    color: orange;
+}
+main{
+    max-width: 100%;/* width of display will be 100% if width of 1600 wide  width px to given
+    width falls short then 100% apply*/
+    width: 1200px;
+    margin: 80px auto;/* top and bottom 80 px and right and left will be auto*/
+    padding: 0 40px;
+    box-sizing: border-box;/*if extra space of width + padding  addup then 
+    to solve this  border box  is used */
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+
+}
+.image{
+    text-align: center;
+    margin: 80px 0;
+    white-space:nowrap;
+
+}
+.image li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+
+}
+.image li img{
+    max-width: 100%;
+}
+section .join{
+    background:#F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px;
+    padding: 10px 20px; /* this section represent  email portion*/
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+footer{
+    background: #f63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

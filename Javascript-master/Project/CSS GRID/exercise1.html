@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise css grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-gap: 1em; */
+            
+        }
+
+        .wrapper>div{
+            background:#eee;
+            padding: 1em;
+        }
+        .wrapper >div:nth-child(odd){
+            background: #ddd;
+    
+        }
+        .a{
+            grid-column:1/3 ;
+            grid-row: 1;
+        }
+        .b{
+            grid-column:3;
+            grid-row: 1/span 2;
+        }
+        .c{
+            grid-column:2/1;
+        }
+        .e{
+            grid-column: 1/4;
+            grid-row: 3;
+        }
+        .item{
+           border: solid 2px black;
+           text-align: center;
+        }
+    </style>
+        
+    
+</head>
+<body>
+    <h1>A Five Items Grid Layout</h1>
+    <div class="wrapper">
+        <div class="a item">header</div>
+        <div class="b item">menu</div>
+        <div class="c item">main</div>
+        <div class="d item">right</div>
+        <div class="e item">footer</div>
+
+    </div>
+    <p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+
+<p>Item 1, 2, and 5 are set to span multiple columns or rows.</p>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+/*  class red and specifically the element have red class */
+/* div.red{
+  background-color: red;
+}
+div.red.green-text{
+    background-color: green;
+}
+ul li{
+background-color: orange;
+}
+span, li.red{
+    background-color: blue;
+}
+li.red~li{
+    background-color: yellow;
+}
+li.red + li{
+    background-color: red;
+}
+li.red + li.green{
+    background-color: rgb(245, 79, 19);
+} 
+li:hover{
+    background-color: pink;
+}
+ input:focus{
+    background-color: red;
+}
+input:required{
+    background-color: orange;
+}
+input:disabled{
+        margin: 50px;
+    }
+
+ li:first-child{
+    background-color: red;
+}
+li:last-child{
+    background-color:  orange;
+} 
+ li:nth-child(4){
+    background-color: pink;
+}
+
+li:nth-last-child(2n-1){
+    background-color:red;
+}
+
+li:nth-child(2n){
+    background-color: yellow;
+}
+li:nth-child(3n){
+    background-color: yellow;
+}
+
+b:only-child{
+    background-color: red;
+}
+
+span:first-of-type{
+    background-color: orange;
+}
+li:last-of-type{
+    background-color:  red;
+}
+li:not(.red){
+    background-color: yellow;
+}
+span:only-of-type{
+    background-color: red;
+}
+
+b:only-of-type{
+    background-color: yellow;
+     tells  this  is only element in whole content 
+}
+div.red::after{
+    content: 'hello';
+    background-color: yellow;
+    PSUDO selector it jsut append the  content befor or after 
+    of the element div have class red. 
+}
+div.red::before{
+    content: 'WELCOME';
+    background-color: yellow;
+}
+
+ATTRIBUTES SELECTOR:-
+
+[data-red]{
+    background-color: crimson;
+}
+[abc="anything"]{
+    background-color: cyan;
+}
+*/
